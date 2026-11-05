@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".github/copilot-instructions.md" />
+    <File Path=".gitignore" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="aspnetcore10/aspnetcore10.csproj" Id="b3c7fed5-693d-4702-9aba-33aca4a72c66" />
+  <Project Path="aspnetframework48/aspnetframework48.csproj" Id="ec53dc5a-d8ee-470d-9570-5071d1843349" />
+</Solution>

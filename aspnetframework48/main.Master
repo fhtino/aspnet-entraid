@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="aspnetframework48.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="font-family: Arial, sans-serif;">
+    <form id="form1" runat="server">
+        <div style="background-color: lightgray; padding: 10px;">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/default.aspx">Home</asp:HyperLink>
+            &nbsp;|&nbsp;
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/user-area/default.aspx">User area</asp:HyperLink>
+            &nbsp;|&nbsp;
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/admin-area/default.aspx">Admin area</asp:HyperLink>
+        </div>
+        <div style="text-align: right; font-size: smaller;">
+            <asp:Label ID="UserInfoLabel" runat="server"></asp:Label>
+            &nbsp;&nbsp;
+            <asp:Button ID="LogoutButton" runat="server" Text="Logout" OnClick="LogoutButton_Click"  Visible="False" />
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
